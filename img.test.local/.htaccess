@@ -1,0 +1,14 @@
+RewriteEngine On
+Options +FollowSymlinks
+RewriteBase /
+
+<IfModule php5_module>
+    php_flag engine 0
+</IfModule>
+
+RemoveHandler .phtml .php .php2 .php3 .php4 .php5 .php6 .php7 .phps .cgi .pl .asp .aspx .shtml .shtm .fcgi .fpl
+AddType text/plain .phtml .php .php2 .php3 .php4 .php5 .php6 .php7 .phps .cgi .pl .asp .aspx .shtml .shtm .fcgi .fpl
+
+ErrorDocument 404 /error404.html
+
+RewriteRule ^([A-Za-z-]{1})([0-9]+)\.jpg$ /goods/$1/$2.jpg	[NC]
