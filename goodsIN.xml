@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<products>
+<product id="5" key="3547" name="Товар5" price="900" type="Розница" rubric="3"/>
+<product id="5" key="3547" name="Товар5" price="750" type="Опт" rubric="3"/>
+</products>
