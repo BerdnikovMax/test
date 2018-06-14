@@ -90,7 +90,6 @@
 
 		public function draw($arr)
 		{
-			echo '<br/>Таблица через класс:';
 			foreach ($arr[0] as $key => $value) {
 				$this->header($key);
 			}
